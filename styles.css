@@ -1,5 +1,13 @@
 
     .nav {
+    /* width: 100%;*/
+     /* height: 100%;*/
+      max-width: 600px;
+      min-width: 300px;
+      margin:  30px auto;
+      padding: 90px auto;
+      text-align: center;
+
         background-color: #001925;
         padding: 20px;
         display: flex;
@@ -37,20 +45,20 @@
     
     /* Responsividad */
     @media (max-width: 768px) {
-        .nav {
-            flex-direction: column;
-        }
-        
-        .nav-list {
-            flex-direction: column;
-            gap: 15px;
-        }
-    
-        .nav-link {
-            text-align: center;
-            width: 100%;
-        }
-    }
+      .nav {
+          flex-direction: column;
+      }
+      
+      .nav-list {
+          flex-direction: column;
+          gap: 15px;
+      }
+  
+      .nav-link {
+          text-align: center;
+          width: 100%;
+      }
+  }
     .botonesDeco{
       display: flex;
       flex-direction: row;
@@ -556,44 +564,160 @@ footer{
 }
 
 /* Responsividad */
-@media (max-width: 768px) {
-     .contacto-form-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contacto, .form-container {
-    max-width: 100%;
-    width: auto;
-  }
-    .button-container {
-      flex-direction: column;
-    }
-  
-    .send-button, .reset-button {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  }
-
+/* Ajuste para pantallas pequeñas (teléfonos chicos) */
 @media (max-width: 480px) {
-  .heading {
-    font-size: 1.25rem;
+  .nav {
+    flex-direction: column;
+    /*padding: 5px;*/
+    text-align: center;
   }
 
-  .input, .textarea {
-    font-size: 0.875rem;
+  .nav-list {
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+  }
+
+  .nav-link {
+    font-size: 14px; /* Reducir el tamaño de la fuente */
+    padding: 8px 10px;
+    width: 100%;
+  }
+
+  .botonesDeco {
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  /* Tarjetas */
+  .card1 {
+    width: 100%; /* Ajustar a toda la pantalla */
+    height: auto; /* Permitir que la altura se ajuste */
+    margin: 10px 0;
+  }
+
+  .footercard {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  /* Formulario */
+  .form-container {
+    padding: 15px;
+    width: 150%;
+  }
+
+  .form-container .input, 
+  .form-container .textarea {
+    font-size: 12px; /* Reducir el tamaño del texto */
     padding: 8px;
+  }
+
+  .send-button, 
+  .reset-button {
+    width: 100%;
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 10px;
+  }
+
+  .contacto {
+    padding: 1rem;
+    margin: 0 auto;
+    width: 90%; /* Ajuste al ancho del celular */
+  }
+
+  .contact-title {
+    font-size: 1.25rem;
+    margin-top: 10%;
+  }
+
+  .icon-contact {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .card1 {
+      width: 90%; /* Ajuste al 90% del ancho de la pantalla */
+      margin: 10px auto; /* Centrado con margen automático */
+  }
+
+  .header, .info {
+      margin: 5px;
+  }
+
+  .titlecard {
+      font-size: 1rem; /* Ajustar el tamaño del texto */
+  }
+
+  .footercard {
+      padding: 10px;
+      flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .form-container {
+      padding: 10px;
+  }
+
+  .form-container .input, 
+  .form-container .textarea {
+      font-size: 12px; /* Reducir el tamaño del texto */
+  }
+
+  .send-button, .reset-button {
+      font-size: 12px; /* Reducir el tamaño de los botones */
+      padding: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .example-2 .icon-content {
+      margin: 5px auto;
+      width: 50px;
+      height: 50px;
+  }
+
+  .example-2 .icon-content a {
+      width: 40px;
+      height: 40px;
+  }
+
+  .example-2 .icon-content svg {
+      width: 24px;
+      height: 24px;
+  }
+}
+@media (max-width: 480px) {
+  .cards {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card1 {
+      width: 90%;
+      margin: 10px 0;
   }
 }
 
 
+@media (max-width: 480px) {
+  .nav-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
 
-
-
-
-
-
+  .nav-link {
+      padding: 10px;
+      font-size: 14px;
+  }
+}
 
   /*enlaces */
 ul {
@@ -692,19 +816,5 @@ ul {
 
 
 
+  
 
-
-@media (max-width: 768px) {
-    .nav ul {
-        flex-direction: column;
-    }
-
-    .button-container {
-        flex-direction: column;
-    }
-
-    .send-button, .reset-button {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
